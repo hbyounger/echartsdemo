@@ -57,7 +57,6 @@ export default class App extends React.Component {
                 }],
                 animationDuration: 2000},
         }
-
     }
     grids = [];
     xAxes = [];
