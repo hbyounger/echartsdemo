@@ -1915,7 +1915,7 @@ var option = {
                 },
                 //阴影的填充样式
                 areaStyle: {
-                    color: rgba(47,69,84,0.3),
+                    color: 'rgba(47,69,84,0.3)',
                     shadowBlur: '...',
                     shadowColor: '...',
                     shadowOffsetX: 0,
@@ -1923,10 +1923,15 @@ var option = {
                     opacity: 0.3,
                 },
             },
+            //选中范围的填充颜色。
             fillerColor: 'rgba(167,183,204,0.4)',
+            //边框颜色。
             borderColor: '#ddd',
+            //手柄的 icon 形状，支持路径字符串，有默认值。
             handleIcon: '...',
+            //控制手柄的尺寸，可以是像素大小，也可以是相对于 dataZoom 组件宽度的百分比，默认跟 dataZoom 宽度相同。
             handleSize: '100%',
+            //手柄的样式配置
             handleStyle: {
                 color: '#a7b7cc',
                 borderColor: '#000',
@@ -1938,10 +1943,15 @@ var option = {
                 shadowOffsetY: 0,
                 opacity: '...',
             },
+            //显示label的小数精度。默认根据数据自动决定。
             labelPrecision: 'auto',
+            //显示的label的格式化器。
             labelFormatter: null,
+            //是否显示detail，即拖拽时候显示详细数值信息。
             showDetail: true,
+            //是否在 dataZoom-silder 组件中显示数据阴影。数据阴影可以简单地反应数据走势。
             showDataShadow: 'auto',
+            //拖动时，是否实时更新系列的视图。如果设置为 false，则只在拖拽结束的时候更新。
             realtime: true,
             textStyle: {
                 color: '#333',
@@ -1950,21 +1960,37 @@ var option = {
                 fontFamily: 'sans-serif',
                 fontSize: 12,
             },
+            //设置 dataZoom-slider 组件控制的 x轴 参见inside datazoom
             xAxisIndex: null,
+            //设置 dataZoom-slider 组件控制的 y轴 参见inside datazoom
             yAxisIndex: null,
+            //设置 dataZoom-slider 组件控制的 radius 轴 参见inside datazoom
             radiusAxisIndex: null,
+            //设置 dataZoom-slider 组件控制的 angle 轴 参见inside datazoom
             angleAxisIndex: null,
+            //dataZoom 的运行原理是通过 数据过滤 来达到 数据窗口缩放 的效果。数据过滤模式的设置不同，效果也不同。 参见inside datazoom
             filterMode: 'filter',
+            //数据窗口范围的起始百分比
             start: 0,
+            //数据窗口范围的结束百分比
             end: 100,
+            //数据窗口范围的起始数值
             startValue: null,
+            //数据窗口范围的结束数值
             endValue: null,
+            //用于限制窗口大小的最小值
             minSpan: null,
+            //用于限制窗口大小的最大值
             maxSpan: null,
+            //用于限制窗口大小的最小值
             minValueSpan: null,
+            //用于限制窗口大小的最大值
             maxValueSpan: null,
+            //布局方式是横还是竖
             orient: null,
+            //是否锁定选择区域（或叫做数据窗口）的大小
             zoomLock: false,
+            //设置触发视图刷新的频率。单位为毫秒（ms）。
             throttle: 100,
             zlevel: 0,
             z: 2,
